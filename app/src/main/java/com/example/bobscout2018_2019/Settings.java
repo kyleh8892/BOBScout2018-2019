@@ -32,7 +32,7 @@ public class Settings extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        sharedPref = this.getSharedPreferences("BOBScout_prefs",Context.MODE_PRIVATE);
+        sharedPref = this.getSharedPreferences("BOBScout2018-2019_prefs",Context.MODE_PRIVATE);
         editor = sharedPref.edit();
 
         alliance = findViewById(R.id.alliance);
