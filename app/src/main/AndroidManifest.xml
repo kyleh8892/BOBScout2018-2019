@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Signin_Page"></activity>
+        <activity android:name=".Match_Auto_Screen"></activity>
+        <activity android:name=".Match_Auto" />
+        <activity android:name=".Signin_Page" />
         <activity android:name=".Submission_Screen" />
         <activity android:name=".In_Match_Screen" />
         <activity android:name=".match_endgame" />
