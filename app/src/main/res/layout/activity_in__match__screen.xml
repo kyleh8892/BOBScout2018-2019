@@ -4,4 +4,457 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".In_Match_Screen"/>
+    tools:context=".In_Match_Screen">
+
+    <ToggleButton
+        android:id="@+id/Hatch_LV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="60dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/Cargo_LV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Hatch_LV3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/Hatch_LV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hatch_LV3" />
+
+    <ToggleButton
+        android:id="@+id/Cargo_LV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Hatch_LV2"
+        app:layout_constraintTop_toBottomOf="@+id/Cargo_LV3" />
+
+    <ToggleButton
+        android:id="@+id/Hatch_LV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hatch_LV2" />
+
+    <ToggleButton
+        android:id="@+id/Cargo_LV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Hatch_LV1"
+        app:layout_constraintTop_toBottomOf="@+id/Cargo_LV2" />
+
+    <ToggleButton
+        android:id="@+id/Hatch2_LV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="60dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Cargo_LV3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/Cargo2_LV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Hatch2_LV3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/Hatch2_LV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Cargo_LV2"
+        app:layout_constraintTop_toBottomOf="@+id/Hatch2_LV3" />
+
+    <ToggleButton
+        android:id="@+id/Cargo2_LV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Hatch2_LV2"
+        app:layout_constraintTop_toBottomOf="@+id/Cargo2_LV3" />
+
+    <ToggleButton
+        android:id="@+id/Hatch2_LV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Cargo_LV1"
+        app:layout_constraintTop_toBottomOf="@+id/Hatch2_LV2" />
+
+    <ToggleButton
+        android:id="@+id/Cargo2_LV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Hatch2_LV1"
+        app:layout_constraintTop_toBottomOf="@+id/Cargo2_LV2" />
+
+    <TextView
+        android:id="@+id/Closer_rocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Rocket closer on the feild"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hatch_LV1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="40dp"
+        android:text="Rocket FARTHER away on the feild"
+        app:layout_constraintStart_toEndOf="@+id/Closer_rocket"
+        app:layout_constraintTop_toBottomOf="@+id/Cargo_LV1" />
+
+    <ToggleButton
+        android:id="@+id/Blue_hatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="108dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Closer_rocket" />
+
+    <ToggleButton
+        android:id="@+id/Hatch_Ship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="100dp"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cargo_LV1" />
+
+    <ToggleButton
+        android:id="@+id/Ship_Cargo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Blue_hatch"
+        app:layout_constraintTop_toBottomOf="@+id/Hatch_Ship" />
+
+    <ToggleButton
+        android:id="@+id/Hatch_Ship_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="44dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Hatch_Ship"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ToggleButton
+        android:id="@+id/Ship_Cargo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Ship_Cargo1"
+        app:layout_constraintTop_toBottomOf="@+id/Hatch_Ship_2" />
+
+    <ToggleButton
+        android:id="@+id/Hatch_Ship_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="45dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Hatch_Ship_2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ToggleButton
+        android:id="@+id/Ship_Cargo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Ship_Cargo2"
+        app:layout_constraintTop_toBottomOf="@+id/Hatch_Ship_3" />
+
+    <ToggleButton
+        android:id="@+id/Blue_Cargo_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Blue_hatch" />
+
+    <ToggleButton
+        android:id="@+id/Ship_Cargo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Blue_Cargo_Left"
+        app:layout_constraintTop_toBottomOf="@+id/Ship_Cargo1" />
+
+    <ToggleButton
+        android:id="@+id/Hatch_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="18dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ship_Cargo4"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <ToggleButton
+        android:id="@+id/Ship_Cargo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Ship_Cargo4"
+        app:layout_constraintTop_toBottomOf="@+id/Ship_Cargo2" />
+
+    <ToggleButton
+        android:id="@+id/Hatch_back_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Hatch_Back"
+        app:layout_constraintTop_toBottomOf="@+id/Ship_Cargo5" />
+
+    <ToggleButton
+        android:id="@+id/Ship_Cargo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Ship_Cargo5"
+        app:layout_constraintTop_toBottomOf="@+id/Ship_Cargo3" />
+
+    <ToggleButton
+        android:id="@+id/Hatch_Back_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="12dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Hatch_back_2"
+        app:layout_constraintTop_toBottomOf="@+id/Ship_Cargo6" />
+
+    <ToggleButton
+        android:id="@+id/Red_Hatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="192dp"
+        android:layout_marginRight="192dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Ship_Cargo3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/Red_Cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="384dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Ship_Cargo6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/Cargoship_Red_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="384dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Red_Cargo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/Cargo_Blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="25dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintBottom_toTopOf="@+id/Cargo_Ship_Left"
+        app:layout_constraintStart_toEndOf="@+id/Blue_hatch"
+        app:layout_constraintTop_toBottomOf="@+id/Closer_rocket" />
+
+    <ToggleButton
+        android:id="@+id/Cargo_Ship_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="ToggleButton"
+        android:textOff="Cargo"
+        android:textOn="Cargo"
+        app:layout_constraintStart_toEndOf="@+id/Blue_Cargo_Left"
+        app:layout_constraintTop_toBottomOf="@+id/Cargo_Blue" />
+
+    <ToggleButton
+        android:id="@+id/Cargoship_Red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:text="ToggleButton"
+        android:textOff="Hatch"
+        android:textOn="Hatch"
+        app:layout_constraintStart_toEndOf="@+id/Red_Hatch"
+        app:layout_constraintTop_toBottomOf="@+id/Cargoship_Red_Right" />
+
+    <Button
+        android:id="@+id/Match_End"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End Match"
+        tools:layout_editor_absoluteX="729dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+</android.support.constraint.ConstraintLayout>
