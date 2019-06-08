@@ -453,8 +453,11 @@
         android:id="@+id/Match_End"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="199dp"
+        android:layout_marginLeft="199dp"
+        android:layout_marginTop="69dp"
         android:text="End Match"
-        tools:layout_editor_absoluteX="729dp"
-        tools:layout_editor_absoluteY="69dp" />
+        app:layout_constraintStart_toEndOf="@+id/Cargo2_LV3"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
