@@ -33,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
 
+                android:onClick="scoutAuto"
                 android:text="Scout Match"
                 app:layout_constraintEnd_toStartOf="@id/scoutMatch"
                 app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +75,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344"
+        app:layout_constraintVertical_bias="0.323"
         app:srcCompat="@mipmap/banner_horizontal" />
+
+    <TextView
+        android:id="@+id/currentScouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/scouter"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.503" />
 
 </android.support.constraint.ConstraintLayout>

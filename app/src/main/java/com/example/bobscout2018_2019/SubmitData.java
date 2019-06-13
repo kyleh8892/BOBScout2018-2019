@@ -8,6 +8,6 @@ public class SubmitData extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_submit);
+        setContentView(R.layout.activity_submitData);
     }
 }

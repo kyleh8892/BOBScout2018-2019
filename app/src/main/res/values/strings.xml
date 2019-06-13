@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">BOB Scout 2018-2019</string>
+
+    <string name="scouter">Current Scouter:</string>
 </resources>

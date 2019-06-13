@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".In_Match_Screen">
+    tools:context=".ScoutMatch">
 
     <ToggleButton
         android:id="@+id/Hatch_LV3"
@@ -23,9 +23,9 @@
         android:id="@+id/Cargo_LV3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="52dp"
         android:text="ToggleButton"
         android:textOff="Cargo"
         android:textOn="Cargo"
@@ -427,9 +427,9 @@
         android:id="@+id/Cargo_Ship_Left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="120dp"
         android:text="ToggleButton"
         android:textOff="Cargo"
         android:textOn="Cargo"
