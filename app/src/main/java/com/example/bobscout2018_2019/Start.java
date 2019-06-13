@@ -43,9 +43,9 @@ public class Start extends AppCompatActivity {
         return true;
     }
 
-   /* public void scoutMatch(View v) {
-        Intent intent = new Intent(this, ScoutMatchSetup.class);
+    public void signIn(View v) {
+        Intent intent = new Intent(this, SignIn.class);
         startActivity(intent);
     }
-    */
+
 }
