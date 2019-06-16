@@ -8,6 +8,6 @@ public class ScoutEnd extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scoutEnd);
+        setContentView(R.layout.activity_scout_end);
     }
 }

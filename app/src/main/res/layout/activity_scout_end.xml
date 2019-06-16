@@ -67,8 +67,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="244dp">
+        app:layout_constraintTop_toBottomOf="@+id/Defense_Question">
 
         <RadioButton
             android:id="@+id/Defense_Yes"
@@ -125,20 +126,25 @@
         android:id="@+id/Summary_Question"
         android:layout_width="550dp"
         android:layout_height="0dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="16dp"
         android:text="Provide a quick couple sentences about the match? "
-        tools:layout_editor_absoluteX="343dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintStart_toEndOf="@+id/Hab_Questions"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/responce_Answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="242dp"
+        android:layout_marginLeft="242dp"
         android:layout_marginTop="33dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintTop_toBottomOf="@+id/Summary_Question"
-        tools:layout_editor_absoluteX="343dp" />
+        app:layout_constraintStart_toEndOf="@+id/Hab_Answers"
+        app:layout_constraintTop_toBottomOf="@+id/Summary_Question" />
 
     <Button
         android:id="@+id/Submit_Endgame"
@@ -170,10 +176,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="45dp"
+        android:layout_marginTop="90dp"
         android:textOff="Bot damaged"
         android:textOn="Bot damaged"
         app:layout_constraintStart_toEndOf="@+id/Messedup_Toggle"
-        tools:layout_editor_absoluteY="204dp" />
+        app:layout_constraintTop_toBottomOf="@+id/responce_Answer" />
 
     <ToggleButton
         android:id="@+id/tipped_responce"
@@ -181,9 +188,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:layout_marginLeft="45dp"
+        android:layout_marginTop="169dp"
         android:text="ToggleButton"
         android:textOff="Robot tipped over"
         app:layout_constraintStart_toEndOf="@+id/Damaged"
-        tools:layout_editor_absoluteY="204dp" />
+        app:layout_constraintTop_toBottomOf="@+id/Summary_Question" />
 
 </android.support.constraint.ConstraintLayout>

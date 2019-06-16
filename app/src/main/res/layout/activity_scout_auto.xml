@@ -28,21 +28,21 @@
         app:layout_constraintTop_toBottomOf="@+id/Hab_auto">
 
         <RadioButton
-            android:id="@+id/Auto_LV1"
+            android:id="@+id/auto_LV1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Level 1" />
 
         <RadioButton
-            android:id="@+id/Auto_LV2"
+            android:id="@+id/auto_LV2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Level 2" />
 
         <RadioButton
-            android:id="@+id/Auto_LV3"
+            android:id="@+id/auto_LV3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -50,14 +50,14 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/Auto_Line"
+        android:id="@+id/auto_Line"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
-        android:layout_marginTop="43dp"
+        android:layout_marginStart="540dp"
+        android:layout_marginLeft="540dp"
+        android:layout_marginTop="200dp"
         android:text="Did they cross the auto line?"
-        app:layout_constraintStart_toEndOf="@+id/Hab_auto"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
@@ -66,8 +66,8 @@
         android:layout_marginStart="246dp"
         android:layout_marginLeft="246dp"
         android:layout_marginTop="19dp"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/Auto_Line">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto_Line">
 
         <RadioButton
             android:id="@+id/Line_Yes"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Auto_Hatches_Question"
+        android:id="@+id/auto_Hatches_Question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
@@ -113,24 +113,24 @@
         android:layout_marginLeft="59dp"
         android:layout_marginTop="17dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Auto_Hatches_Question">
+        app:layout_constraintTop_toBottomOf="@+id/auto_Hatches_Question">
 
         <RadioButton
-            android:id="@+id/Auto_cargo_full"
+            android:id="@+id/auto_cargo_full"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Cargo ship was started with all hatches" />
 
         <RadioButton
-            android:id="@+id/Auto_places_1"
+            android:id="@+id/auto_places_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Placed 1 hatch" />
 
         <RadioButton
-            android:id="@+id/Auto_Placed_zero"
+            android:id="@+id/auto_Placed_zero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -138,15 +138,15 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/Auto_cargo_Questions"
+        android:id="@+id/auto_cargo_Questions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="192dp"
         android:layout_marginLeft="192dp"
         android:layout_marginTop="186dp"
         android:text="How many cargo did they score in auto?"
-        app:layout_constraintStart_toEndOf="@+id/Auto_Hatches_Question"
-        app:layout_constraintTop_toBottomOf="@+id/Auto_Line" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/auto_Line" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -158,21 +158,21 @@
         app:layout_constraintTop_toTopOf="parent" >
 
         <RadioButton
-            android:id="@+id/Auto_scored_Zero_cargo"
+            android:id="@+id/auto_scored_Zero_cargo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Zero" />
 
         <RadioButton
-            android:id="@+id/Auto_scored_Cargo_One"
+            android:id="@+id/auto_scored_Cargo_One"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="One" />
 
         <RadioButton
-            android:id="@+id/Auto_scored_cargo_2"
+            android:id="@+id/auto_scored_cargo_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

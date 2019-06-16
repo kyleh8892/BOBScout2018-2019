@@ -10,12 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ScoutAuto"></activity>
-        <activity android:name=".Match_Auto" />
         <activity android:name=".SignIn" />
         <activity android:name=".SubmitData" />
         <activity android:name=".ScoutMatch" />
         <activity android:name=".ScoutEnd" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Start">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

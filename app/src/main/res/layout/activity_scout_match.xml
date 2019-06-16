@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoutMatch">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/Timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time: 0.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ToggleButton
+                    android:id="@+id/stop"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Stop"
+                    android:textOff="Stop"
+                    android:textOn="Stop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.75"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/h_tl_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                    <ToggleButton
+                        android:id="@+id/h_ml_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                    <ToggleButton
+                        android:id="@+id/h_bl_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/c_ml_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                    <ToggleButton
+                        android:id="@+id/c_bl_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/h_tr_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                    <ToggleButton
+                        android:id="@+id/h_mr_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                    <ToggleButton
+                        android:id="@+id/h_br_1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

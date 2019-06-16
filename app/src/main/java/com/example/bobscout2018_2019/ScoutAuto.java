@@ -8,6 +8,6 @@ public class ScoutAuto extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scoutAuto);
+        setContentView(R.layout.activity_scout_auto);
     }
 }

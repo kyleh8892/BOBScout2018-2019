@@ -19,6 +19,7 @@ public class Start extends AppCompatActivity {
 
     private SharedPreferences sharedPref;
     private TextView scouterOutput;
+    private String output;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +34,14 @@ public class Start extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
         }
 
-        scouterOutput.setText("Currently Scouting" + sharedPref.getString("currentScouter", ""));
+    }
+
+
+    @Override
+    protected void onResume() {
+        output = "Currently Scouting:" + sharedPref.getString("currentScouter", "");
+        scouterOutput.setText(output);
+        super.onResume();
     }
 
     @Override

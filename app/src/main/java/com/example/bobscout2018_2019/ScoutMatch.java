@@ -8,6 +8,6 @@ public class ScoutMatch extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scoutMatch);
+        setContentView(R.layout.activity_scout_match);
     }
 }
