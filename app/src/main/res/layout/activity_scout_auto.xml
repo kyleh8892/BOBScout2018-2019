@@ -6,176 +6,213 @@
     android:layout_height="match_parent"
     tools:context=".ScoutAuto">
 
-    <TextView
-        android:id="@+id/Hab_auto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginLeft="59dp"
-        android:layout_marginTop="43dp"
-        android:text="What hab did they start at?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginLeft="59dp"
-        android:layout_marginTop="19dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Hab_auto">
-
-        <RadioButton
-            android:id="@+id/auto_LV1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Level 1" />
-
-        <RadioButton
-            android:id="@+id/auto_LV2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Level 2" />
-
-        <RadioButton
-            android:id="@+id/auto_LV3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Level 3" />
-    </RadioGroup>
 
     <TextView
-        android:id="@+id/auto_Line"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="540dp"
-        android:layout_marginLeft="540dp"
-        android:layout_marginTop="200dp"
-        android:text="Did they cross the auto line?"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="You are currently scouting"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="246dp"
-        android:layout_marginLeft="246dp"
-        android:layout_marginTop="19dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/auto_Line">
-
-        <RadioButton
-            android:id="@+id/Line_Yes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Yes" />
-
-        <RadioButton
-            android:id="@+id/Line_no"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="No" />
-    </RadioGroup>
 
     <Button
-        android:id="@+id/Start_Driver_period"
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Start Teleop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002">
+
+        <ToggleButton
+            android:id="@+id/autoCross"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auto Line Crossed"
+            android:textOff="Auto Line Crossed"
+            android:textOn="Auto Line Crossed" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/placeHatchCS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Hatch On Cargo Ship"
+            android:textOff="Place Hatch On Cargo Ship"
+            android:textOn="Place Hatch On Cargo Ship" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/placeHatchRS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Hatch On Rocket Ship"
+            android:textOff="Place Hatch On Rocket Ship"
+            android:textOn="Place Hatch On Rocket Ship" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/placeCargoCS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Cargo In Cargo Ship"
+            android:textOff="Place Cargo In Cargo Ship"
+            android:textOn="Place Cargo In Cargo Ship" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/placeCargoRS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Place Cargo in rocket ship"
+            android:textOff="Place Cargo in rocket ship"
+            android:textOn="Place Cargo in rocket ship" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/pickHatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup Hatch"
+            android:textOff="Pickup Hatch"
+            android:textOn="Pickup Hatch" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <ToggleButton
+            android:id="@+id/pickCargo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pickup Cargo"
+            android:textOff="Pickup Cargo"
+            android:textOn="Pickup Cargo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="617dp"
-        android:layout_marginLeft="617dp"
-        android:layout_marginTop="482dp"
-        android:text="Start drivered controlled period"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="170dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002">
 
-    <TextView
-        android:id="@+id/auto_Hatches_Question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginLeft="59dp"
-        android:layout_marginTop="71dp"
-        android:text="How many hatches did they score in auto?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="59dp"
-        android:layout_marginLeft="59dp"
-        android:layout_marginTop="17dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/auto_Hatches_Question">
-
-        <RadioButton
-            android:id="@+id/auto_cargo_full"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cargo ship was started with all hatches" />
+            android:text="Auto Start Position (relative to driver)" />
 
-        <RadioButton
-            android:id="@+id/auto_places_1"
-            android:layout_width="wrap_content"
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <RadioGroup
+            android:id="@+id/autoStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center">
+
+            <RadioButton
+                android:id="@+id/left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:text=" Left" />
+
+            <RadioButton
+                android:id="@+id/center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="Center" />
+
+            <RadioButton
+                android:id="@+id/right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:text="Right" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Placed 1 hatch" />
+            android:text="Auto Start Height" />
 
-        <RadioButton
-            android:id="@+id/auto_Placed_zero"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Placed zero hatches" />
-    </RadioGroup>
+        <RadioGroup
+            android:id="@+id/startHeight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/auto_cargo_Questions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="192dp"
-        android:layout_marginLeft="192dp"
-        android:layout_marginTop="186dp"
-        android:text="How many cargo did they score in auto?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/auto_Line" />
+            <RadioButton
+                android:id="@+id/level1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hab Level 1"
+                tools:layout_marginBottom="15dp" />
 
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="512dp"
-        android:layout_marginLeft="512dp"
-        android:layout_marginTop="284dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+            <RadioButton
+                android:id="@+id/level2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hab Level 2"
+                tools:layout_marginBottom="15dp" />
+        </RadioGroup>
 
-        <RadioButton
-            android:id="@+id/auto_scored_Zero_cargo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Zero" />
+    </LinearLayout>
 
-        <RadioButton
-            android:id="@+id/auto_scored_Cargo_One"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="One" />
-
-        <RadioButton
-            android:id="@+id/auto_scored_cargo_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Two" />
-    </RadioGroup>
 </android.support.constraint.ConstraintLayout>

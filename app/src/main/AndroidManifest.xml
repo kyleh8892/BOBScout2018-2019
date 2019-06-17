@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ScoutSetup"></activity>
         <activity
             android:name=".ScoutAuto"
             android:screenOrientation="landscape" />
@@ -26,7 +27,7 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".Start"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,8 +38,7 @@
             android:name=".Settings"
             android:label="Settings"
             android:parentActivityName=".Start"
-            android:screenOrientation="landscape"
-            />
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>

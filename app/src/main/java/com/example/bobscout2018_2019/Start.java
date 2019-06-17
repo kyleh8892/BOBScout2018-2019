@@ -17,29 +17,34 @@ import android.widget.TextView;
 
 public class Start extends AppCompatActivity {
 
-    private SharedPreferences sharedPref;
+    SharedPreferences sharedPref;
     private TextView scouterOutput;
+    private String currentScouter;
     private String output;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
+
         scouterOutput = findViewById(R.id.currentScouter);
 
         sharedPref = this.getSharedPreferences("BOBScout2018-2019_prefs", Context.MODE_PRIVATE);
+        currentScouter = sharedPref.getString("currentScouter", "");
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
         }
 
+        output = "Current scouter: " + currentScouter;
+
+        scouterOutput.setText(output);
     }
 
 
     @Override
     protected void onResume() {
-        output = "Currently Scouting:" + sharedPref.getString("currentScouter", "");
         scouterOutput.setText(output);
         super.onResume();
     }
@@ -69,10 +74,10 @@ public class Start extends AppCompatActivity {
 
     public void scoutAuto(View v){
 
-        if(sharedPref.getString("currentScouter", "") != ""){
+        if(currentScouter != ""){
             Intent intent = new Intent(this, ScoutAuto.class);
             startActivity(intent);
-        }else if (sharedPref.getString("currentScouter", "") == ""){
+        }else if (currentScouter == ""){
             Intent intent = new Intent(this, SignIn.class);
             startActivity(intent);
         }

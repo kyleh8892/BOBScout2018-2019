@@ -12,23 +12,23 @@ import android.widget.EditText;
 
 public class SignIn extends AppCompatActivity {
 
+    SharedPreferences sharedPref;
+    SharedPreferences.Editor editor;
     private EditText nameInput;
-    private SharedPreferences sharedPref;
-    private SharedPreferences.Editor editor;
-    String currentScouter;
+    public String currentScouter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        nameInput = findViewById(R.id.signIn);
-
         sharedPref = this.getSharedPreferences("BOBScout2018-2019_prefs", Context.MODE_PRIVATE);
         editor = sharedPref.edit();
 
-        currentScouter = sharedPref.getString("currentScouter ", "");
+        nameInput = findViewById(R.id.signIn);
 
+        currentScouter = sharedPref.getString("currentScouter", "");
         nameInput.setText(currentScouter);
 
         nameInput.addTextChangedListener(new TextWatcher() {
@@ -44,17 +44,19 @@ public class SignIn extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                currentScouter = nameInput.getText().toString();
-                editor.putString("currentScouter", currentScouter);
+
             }
         });
     }
 
-    public void continueAfterSignIn (View v ){
+    public void continueAfterSignIn(View v) {
         currentScouter = nameInput.getText().toString();
-        editor.putString("currentScouter", currentScouter);
 
-        Intent intent = new Intent(this, ScoutAuto.class);
+        editor.putString("currentScouter", currentScouter);
+        editor.apply();
+
+        Intent intent = new Intent(this, Start.class);
         startActivity(intent);
     }
+
 }
