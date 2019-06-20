@@ -55,7 +55,7 @@ public class SignIn extends AppCompatActivity {
         editor.putString("currentScouter", currentScouter);
         editor.apply();
 
-        Intent intent = new Intent(this, Start.class);
+        Intent intent = new Intent(this, ScoutSetup.class);
         startActivity(intent);
     }
 

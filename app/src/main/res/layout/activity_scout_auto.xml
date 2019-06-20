@@ -38,7 +38,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="250dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="20dp"
@@ -50,85 +50,108 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.42000002">
 
-        <ToggleButton
-            android:id="@+id/autoCross"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Auto Line Crossed"
-            android:textOff="Auto Line Crossed"
-            android:textOn="Auto Line Crossed" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:id="@+id/autoCross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Auto Line Crossed"
+                android:textOff="Auto Line Crossed"
+                android:textOn="Auto Line Crossed" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <ToggleButton
-            android:id="@+id/placeHatchCS"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Place Hatch On Cargo Ship"
-            android:textOff="Place Hatch On Cargo Ship"
-            android:textOn="Place Hatch On Cargo Ship" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/placeHatchCS"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Place Hatch On Cargo Ship"
+                android:textOff="Place Hatch On Cargo Ship"
+                android:textOn="Place Hatch On Cargo Ship" />
+
+            <ToggleButton
+                android:id="@+id/placeCargoCS"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Place Cargo In Cargo Ship"
+                android:textOff="Place Cargo In Cargo Ship"
+                android:textOn="Place Cargo In Cargo Ship" />
+        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <ToggleButton
-            android:id="@+id/placeHatchRS"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Place Hatch On Rocket Ship"
-            android:textOff="Place Hatch On Rocket Ship"
-            android:textOn="Place Hatch On Rocket Ship" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/placeHatchRS"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Place Hatch On Rocket Ship"
+                android:textOff="Place Hatch On Rocket Ship"
+                android:textOn="Place Hatch On Rocket Ship" />
+
+            <ToggleButton
+                android:id="@+id/placeCargoRS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place Cargo in rocket ship"
+                android:textColorLink="#03a9f4"
+                android:textOff="Place Cargo in rocket ship"
+                android:textOn="Place Cargo in rocket ship" />
+        </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <ToggleButton
-            android:id="@+id/placeCargoCS"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Place Cargo In Cargo Ship"
-            android:textOff="Place Cargo In Cargo Ship"
-            android:textOn="Place Cargo In Cargo Ship" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            <ToggleButton
+                android:id="@+id/pickHatch"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:text="Pickup Hatch"
+                android:textOff="Pickup Hatch"
+                android:textOn="Pickup Hatch" />
 
-        <ToggleButton
-            android:id="@+id/placeCargoRS"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Place Cargo in rocket ship"
-            android:textOff="Place Cargo in rocket ship"
-            android:textOn="Place Cargo in rocket ship" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <ToggleButton
-            android:id="@+id/pickHatch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pickup Hatch"
-            android:textOff="Pickup Hatch"
-            android:textOn="Pickup Hatch" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
-        <ToggleButton
-            android:id="@+id/pickCargo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Pickup Cargo"
-            android:textOff="Pickup Cargo"
-            android:textOn="Pickup Cargo" />
+            <ToggleButton
+                android:id="@+id/pickCargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pickup Cargo"
+                android:textOff="Pickup Cargo"
+                android:textOn="Pickup Cargo" />
+        </LinearLayout>
 
     </LinearLayout>
 
