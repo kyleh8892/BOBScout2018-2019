@@ -75,7 +75,7 @@ public class Start extends AppCompatActivity {
     public void scoutAuto(View v){
 
         if(currentScouter != ""){
-            Intent intent = new Intent(this, ScoutAuto.class);
+            Intent intent = new Intent(this, ScoutSetup.class);
             startActivity(intent);
         }else if (currentScouter == ""){
             Intent intent = new Intent(this, SignIn.class);
