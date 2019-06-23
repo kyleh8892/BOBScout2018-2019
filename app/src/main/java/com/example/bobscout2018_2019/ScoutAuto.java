@@ -11,3 +11,5 @@ public class ScoutAuto extends AppCompatActivity {
         setContentView(R.layout.activity_scout_auto);
     }
 }
+
+
