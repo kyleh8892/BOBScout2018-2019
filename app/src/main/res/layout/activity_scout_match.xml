@@ -41,7 +41,7 @@
 
                 <ToggleButton
                     android:id="@+id/stop"
-                    android:layout_width="100dp"
+                    android:layout_width="75dp"
                     android:layout_height="wrap_content"
                     android:text="Stop"
                     android:textOff="Stop"
@@ -76,24 +76,24 @@
 
                     <ToggleButton
                         android:id="@+id/h_tl_1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
                         android:text="Hatch"
                         android:textOff="Hatch"
                         android:textOn="Hatch" />
 
                     <ToggleButton
                         android:id="@+id/h_ml_1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
                         android:text="Hatch"
                         android:textOff="Hatch"
                         android:textOn="Hatch" />
 
                     <ToggleButton
                         android:id="@+id/h_bl_1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
                         android:text="Hatch"
                         android:textOff="Hatch"
                         android:textOn="Hatch" />
@@ -106,17 +106,25 @@
                     android:orientation="vertical">
 
                     <ToggleButton
+                        android:id="@+id/c_tl_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                    <ToggleButton
                         android:id="@+id/c_ml_1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
                         android:text="Cargo"
                         android:textOff="Cargo"
                         android:textOn="Cargo" />
 
                     <ToggleButton
                         android:id="@+id/c_bl_1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
                         android:text="Cargo"
                         android:textOff="Cargo"
                         android:textOn="Cargo" />
@@ -136,7 +144,145 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"/>
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/h_tr_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                    <ToggleButton
+                        android:id="@+id/h_mr_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                    <ToggleButton
+                        android:id="@+id/h_br_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/c_tr_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                    <ToggleButton
+                        android:id="@+id/c_mr_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                    <ToggleButton
+                        android:id="@+id/c_br_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/h_tl_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                    <ToggleButton
+                        android:id="@+id/h_ml_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                    <ToggleButton
+                        android:id="@+id/h_bl_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Hatch"
+                        android:textOff="Hatch"
+                        android:textOn="Hatch" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/c_tl_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                    <ToggleButton
+                        android:id="@+id/c_ml_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                    <ToggleButton
+                        android:id="@+id/c_bl_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -145,27 +291,57 @@
 
                     <ToggleButton
                         android:id="@+id/h_tr_1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
                         android:text="Hatch"
                         android:textOff="Hatch"
                         android:textOn="Hatch" />
 
                     <ToggleButton
                         android:id="@+id/h_mr_1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
                         android:text="Hatch"
                         android:textOff="Hatch"
                         android:textOn="Hatch" />
 
                     <ToggleButton
                         android:id="@+id/h_br_1"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
                         android:text="Hatch"
                         android:textOff="Hatch"
                         android:textOn="Hatch" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/c_tr_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                    <ToggleButton
+                        android:id="@+id/c_mr_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
+
+                    <ToggleButton
+                        android:id="@+id/c_br_1"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:text="Cargo"
+                        android:textOff="Cargo"
+                        android:textOn="Cargo" />
                 </LinearLayout>
 
             </LinearLayout>
