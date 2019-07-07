@@ -78,25 +78,35 @@
                         android:id="@+id/h_tl_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:enabled="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
                         android:id="@+id/h_ml_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
                         android:id="@+id/h_bl_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                 </LinearLayout>
 
@@ -109,25 +119,35 @@
                         android:id="@+id/c_tl_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:enabled="true"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
                         android:id="@+id/c_ml_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
                         android:id="@+id/c_bl_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                 </LinearLayout>
 
@@ -147,28 +167,38 @@
                     android:orientation="vertical">
 
                     <ToggleButton
-                        android:id="@+id/h_tr_1"
+                        android:id="@+id/c_tr_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/h_mr_1"
+                        android:id="@+id/c_mr_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/h_br_1"
+                        android:id="@+id/c_br_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -177,28 +207,38 @@
                     android:orientation="vertical">
 
                     <ToggleButton
-                        android:id="@+id/c_tr_1"
+                        android:id="@+id/h_tr_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/c_mr_1"
+                        android:id="@+id/h_mr_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/c_br_1"
+                        android:id="@+id/h_br_1"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -218,28 +258,37 @@
                     android:orientation="vertical">
 
                     <ToggleButton
-                        android:id="@+id/h_tl_1"
+                        android:id="@+id/h_tl_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/h_ml_1"
+                        android:id="@+id/h_ml_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/h_bl_1"
+                        android:id="@+id/h_bl_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                 </LinearLayout>
 
@@ -249,28 +298,37 @@
                     android:orientation="vertical">
 
                     <ToggleButton
-                        android:id="@+id/c_tl_1"
+                        android:id="@+id/c_tl_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/c_ml_1"
+                        android:id="@+id/c_ml_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/c_bl_1"
+                        android:id="@+id/c_bl_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                 </LinearLayout>
 
@@ -290,28 +348,38 @@
                     android:orientation="vertical">
 
                     <ToggleButton
-                        android:id="@+id/h_tr_1"
+                        android:id="@+id/c_tr_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/h_mr_1"
+                        android:id="@+id/c_mr_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/h_br_1"
+                        android:id="@+id/c_br_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Hatch"
-                        android:textOff="Hatch"
-                        android:textOn="Hatch" />
+                        android:text=""
+                        android:background="@drawable/cargobutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -320,28 +388,37 @@
                     android:orientation="vertical">
 
                     <ToggleButton
-                        android:id="@+id/c_tr_1"
+                        android:id="@+id/h_tr_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/c_mr_1"
+                        android:id="@+id/h_mr_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
 
                     <ToggleButton
-                        android:id="@+id/c_br_1"
+                        android:id="@+id/h_br_2"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
-                        android:text="Cargo"
-                        android:textOff="Cargo"
-                        android:textOn="Cargo" />
+                        android:text=""
+                        android:background="@drawable/hatchbutton"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@android:color/primary_text_light"
+                        android:textOff=""
+                        android:textOn="" />
                 </LinearLayout>
 
             </LinearLayout>
