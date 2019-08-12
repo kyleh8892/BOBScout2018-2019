@@ -73,6 +73,7 @@ public class ScoutAuto extends AppCompatActivity {
         extras.putBoolean("AUTO_PLACE_HATCH_RS", placeHatchRS.isChecked());
         extras.putBoolean("AUTO_PICK_CARGO", pickCargo.isChecked());
         extras.putBoolean("AUTO_PICK_HATCH", pickHatch.isChecked());
+        intent.putExtras(extras);
 
         startActivity(intent);
     }

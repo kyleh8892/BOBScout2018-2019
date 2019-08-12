@@ -124,6 +124,7 @@ public class ScoutSetup extends AppCompatActivity {
         extras.putString("MATCH", matchNum);
         extras.putString("TEAM", teamNum);
 
+
         intent.putExtras(extras);
         startActivity(intent);
     }

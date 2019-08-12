@@ -547,6 +547,7 @@
                         android:layout_height="50dp"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:onClick="decreaseCargoDropped"
                         android:text="-"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -565,6 +566,7 @@
                         android:layout_height="50dp"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:onClick="increaseCargoDropped"
                         android:text="+"
                         android:textSize="18sp" />
 
@@ -593,6 +595,7 @@
                         android:layout_height="50dp"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:onClick="decreaseHatchDropped"
                         android:text="-"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -611,6 +614,7 @@
                         android:layout_height="50dp"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:onClick="increaseHatchDropped"
                         android:text="+"
                         android:textSize="18sp" />
 

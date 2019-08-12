@@ -1,197 +1,315 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="89dp">
 
-    <RadioGroup
-        android:id="@+id/Hab_Answers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Hab_Questions">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        <RadioButton
-            android:id="@+id/Button_LV1"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Level 1" />
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="200dp"
+            android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/Button_LV2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Level 2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
 
-        <RadioButton
-            android:id="@+id/Button_LV3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Level 3" />
+                <ToggleButton
+                    android:id="@+id/messedUp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="I messed up (Discard data)"
+                    android:textOff="I messed up (Discard data)"
+                    android:textOn="I messed up (Discard data)"
+                    tools:layout_editor_absoluteX="331dp"
+                    tools:layout_editor_absoluteY="60dp" />
+            </LinearLayout>
 
-    </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
 
-    <TextView
-        android:id="@+id/Hab_Questions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="24dp"
-        android:text="What hab platform did they end on?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <ToggleButton
+                    android:id="@+id/unusualMatch"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Unusual Match"
+                    android:textOff="Unusual Match"
+                    android:textOn="Unusual Match"
+                    tools:layout_editor_absoluteX="268dp"
+                    tools:layout_editor_absoluteY="125dp" />
 
-    <TextView
-        android:id="@+id/Defense_Question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="24dp"
-        android:text="Defense bot?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Hab_Answers" />
+                <ToggleButton
+                    android:id="@+id/robotTipped"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="tippedOver"
+                    android:text="Robot Tipped Over"
+                    android:textOff="Robot Tipped Over"
+                    android:textOn="Robot Tipped Over"
+                    tools:layout_editor_absoluteX="494dp"
+                    tools:layout_editor_absoluteY="125dp" />
+            </LinearLayout>
 
-    <RadioGroup
-        android:id="@+id/Defense_Answers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Defense_Question">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
 
-        <RadioButton
-            android:id="@+id/Defense_Yes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Yes" />
+                <ToggleButton
+                    android:id="@+id/damagedDrivetrain"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Damaged Drive"
+                    android:textOff="Damaged Drive"
+                    android:textOn="Damaged Drive"
+                    tools:layout_editor_absoluteX="165dp"
+                    tools:layout_editor_absoluteY="187dp" />
 
-        <RadioButton
-            android:id="@+id/Defense_no"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="No" />
-    </RadioGroup>
+                <ToggleButton
+                    android:id="@+id/damagedIntake"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Damaged Intake"
+                    android:textOff="Damaged Intake"
+                    android:textOn="Damaged Intake"
+                    tools:layout_editor_absoluteX="381dp"
+                    tools:layout_editor_absoluteY="187dp" />
 
-    <TextView
-        android:id="@+id/Played_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="38dp"
-        android:text="Was defense played on them during the match?"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Defense_Answers" />
+                <ToggleButton
+                    android:id="@+id/damagedLift"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Damaged Lift"
+                    android:textOff="Damaged Lift"
+                    android:textOn="Damaged Lift"
+                    tools:layout_editor_absoluteX="381dp"
+                    tools:layout_editor_absoluteY="187dp" />
+            </LinearLayout>
 
-    <RadioGroup
-        android:id="@+id/Played_Answers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="43dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Played_question">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
 
-        <RadioButton
-            android:id="@+id/Played_Yes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Yes" />
+                <ToggleButton
+                    android:id="@+id/playedDefense"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="Defense Bot"
+                    android:text="Defense Bot"
+                    android:textOff="Defense Bot"
+                    android:textOn="Defense Bot"
+                    tools:layout_editor_absoluteX="489dp"
+                    tools:layout_editor_absoluteY="252dp" />
 
-        <RadioButton
-            android:id="@+id/Played_No"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="No" />
-    </RadioGroup>
+                <ToggleButton
+                    android:id="@+id/pushBot"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="playedDefense"
+                    android:text="Played Defense"
+                    android:textOff="Push bot"
+                    android:textOn="Push bot"
+                    tools:layout_editor_absoluteX="489dp"
+                    tools:layout_editor_absoluteY="252dp" />
+            </LinearLayout>
 
-    <TextView
-        android:id="@+id/Summary_Question"
-        android:layout_width="550dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="89dp"
-        android:layout_marginLeft="89dp"
-        android:layout_marginTop="16dp"
-        android:text="Provide a quick couple sentences about the match? "
-        app:layout_constraintStart_toEndOf="@+id/Hab_Questions"
-        app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
 
-    <EditText
-        android:id="@+id/responce_Answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="242dp"
-        android:layout_marginLeft="242dp"
-        android:layout_marginTop="33dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintStart_toEndOf="@+id/Hab_Answers"
-        app:layout_constraintTop_toBottomOf="@+id/Summary_Question" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/Submit_Endgame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="450dp"
-        android:layout_marginRight="450dp"
-        android:layout_marginBottom="64dp"
-        android:text="Submit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+                    <RadioGroup
+                        android:id="@+id/levelOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
 
-    <ToggleButton
-        android:id="@+id/Messedup_Toggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="228dp"
-        android:layout_marginLeft="228dp"
-        android:layout_marginTop="91dp"
-        android:text="ToggleButton"
-        android:textOff="I messed up"
-        android:textOn="I messed up"
-        app:layout_constraintStart_toEndOf="@+id/Defense_Question"
-        app:layout_constraintTop_toBottomOf="@+id/responce_Answer" />
+                        <TextView
+                            android:id="@+id/levelOneText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Level One" />
 
-    <ToggleButton
-        android:id="@+id/Damaged"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="90dp"
-        android:textOff="Bot damaged"
-        android:textOn="Bot damaged"
-        app:layout_constraintStart_toEndOf="@+id/Messedup_Toggle"
-        app:layout_constraintTop_toBottomOf="@+id/responce_Answer" />
+                        <RadioButton
+                            android:id="@+id/oneLeft"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:onClick="climbRadioLogic"
+                            android:text="Left" />
 
-    <ToggleButton
-        android:id="@+id/tipped_responce"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginTop="169dp"
-        android:text="ToggleButton"
-        android:textOff="Robot tipped over"
-        app:layout_constraintStart_toEndOf="@+id/Damaged"
-        app:layout_constraintTop_toBottomOf="@+id/Summary_Question" />
+                        <RadioButton
+                            android:id="@+id/oneCenter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:onClick="climbRadioLogic"
+                            android:text="Center" />
+
+                        <RadioButton
+                            android:id="@+id/oneRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="climbRadioLogic"
+                            android:text="Right" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/levelTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/levelTwoText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Level Two" />
+
+                        <RadioButton
+                            android:id="@+id/twoLeft"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:onClick="climbRadioLogic"
+                            android:text="Left" />
+
+                        <RadioButton
+                            android:id="@+id/twoRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="climbRadioLogic"
+                            android:text="Right" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/levelThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/levelThreeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Level Three" />
+
+                        <RadioButton
+                            android:id="@+id/threeCenter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:onClick="climbRadioLogic"
+                            android:text="Center" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:onClick="submit"
+                    android:text="Submit" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="200dp"
+                android:paddingRight="200dp"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="reset"
+                    android:text="Reset" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
