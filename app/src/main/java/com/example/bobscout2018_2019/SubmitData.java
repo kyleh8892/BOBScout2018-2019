@@ -110,7 +110,7 @@ public class SubmitData extends AppCompatActivity {
             }
 
         }
-        //match, team, autoLevel, autoPosition, autoPlaceCargoCS, autoPlaceCargoRS, autoPlaceHatchCS, autoPlaceHatchRS, pickCargo, pickHatch, hatchDropped, cargoDropped discard, unusual, tipped, damDrive, damIntake, damLift, climb, def, push, climb
+        //match, team, autoLevel, autoPosition, ,autoCross, autoPlaceCargoCS, autoPlaceCargoRS, autoPlaceHatchCS, autoPlaceHatchRS, pickCargo, pickHatch, hatchDropped, cargoDropped discard, unusual, tipped, damDrive, damIntake, damLift, climb, def, push, climb
         dataOutput.setText(output);
     }
 

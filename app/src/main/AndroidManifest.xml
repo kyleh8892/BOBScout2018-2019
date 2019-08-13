@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScoutSetup"></activity>
+        <activity
+            android:name=".ScoutSetup"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".ScoutAuto"
             android:screenOrientation="landscape"
