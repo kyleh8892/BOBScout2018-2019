@@ -208,7 +208,7 @@ public class ScoutMatch extends Activity {
 
         int totalHatches = 0;
         int totalCargo = 0;
-
+/*
         for (ToggleButton b : hatchButtons) {
             data += match + "," + team + ",";
             data += getID(b.toString()) + ",";
@@ -228,26 +228,15 @@ public class ScoutMatch extends Activity {
                 totalCargo++;
             }
         }
-
+*/
         data += totalHatches + ",";
-        data += "\n";
-
         data += totalCargo + ",";
-        data += "\n";
     }
 
-    public void increaseHatchDropped(View v){
-        hatchDroppedNumber++;
-    }
-    public void decreaseHatchDropped(View v){
-        hatchDroppedNumber--;
-    }
-    public void increaseCargoDropped(View v){
-        cargoDroppedNumber++;
-    }
-    public void decreaseCargoDropped(View v){
-        cargoDroppedNumber--;
-    }
+    public void increaseHatchDropped(View v) { hatchDroppedNumber++; }
+    public void decreaseHatchDropped(View v) { if (hatchDroppedNumber != 0 ){hatchDroppedNumber--;} }
+    public void increaseCargoDropped(View v) { cargoDroppedNumber++; }
+    public void decreaseCargoDropped(View v) { if (cargoDroppedNumber != 0 ){cargoDroppedNumber--;} }
 
     public String getID (String fullID){
         String ID = "";
