@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="200dp"
             android:layout_marginRight="200dp"
@@ -147,6 +147,32 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/levelFloor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/floorText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Floor" />
+
+                        <RadioButton
+                            android:id="@+id/floor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="climbRadioLogic"
+                            android:text="Floor" />
+                    </RadioGroup>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -296,8 +322,8 @@
                 android:layout_weight="1"
                 android:orientation="horizontal"
                 android:paddingLeft="200dp"
-                android:paddingRight="200dp"
-                android:paddingTop="10dp">
+                android:paddingTop="10dp"
+                android:paddingRight="200dp">
 
                 <Button
                     android:id="@+id/reset"

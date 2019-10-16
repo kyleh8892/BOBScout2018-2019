@@ -20,9 +20,11 @@ public class ScoutEnd extends AppCompatActivity {
     private ToggleButton playedDefense;
     private ToggleButton pushBot;
 
+    private RadioGroup levelFloor;
     private RadioGroup levelOne;
     private RadioGroup levelTwo;
     private RadioGroup levelThree;
+    private RadioButton floor;
     private RadioButton oneLeft;
     private RadioButton oneCenter;
     private RadioButton oneRight;
@@ -45,9 +47,11 @@ public class ScoutEnd extends AppCompatActivity {
         playedDefense = findViewById(R.id.playedDefense);
         pushBot = findViewById(R.id.pushBot);
 
+        levelFloor = findViewById(R.id.levelFloor);
         levelOne = findViewById(R.id.levelOne);
         levelTwo = findViewById(R.id.levelTwo);
         levelThree = findViewById(R.id.levelThree);
+        floor = findViewById(R.id.floor);
         oneLeft = findViewById(R.id.oneLeft);
         oneCenter = findViewById(R.id.oneCenter);
         oneRight = findViewById(R.id.oneRight);
@@ -72,6 +76,8 @@ public class ScoutEnd extends AppCompatActivity {
             climb = 2;
         } else if(levelThree.getCheckedRadioButtonId() == threeCenter.getId()) {
             climb = 3;
+        } else if(levelFloor.getCheckedRadioButtonId() == floor.getId()) {
+            climb = 0;
         }
 
         extras.putBoolean("DISCARD", messedUp.isChecked());
@@ -112,18 +118,26 @@ public class ScoutEnd extends AppCompatActivity {
         levelOne.clearCheck();
         levelTwo.clearCheck();
         levelThree.clearCheck();
+        levelFloor.clearCheck();
     }
 
     public void climbRadioLogic(View v){
         if (levelOne.getCheckedRadioButtonId() == v.getId()) {
             levelTwo.clearCheck();
             levelThree.clearCheck();
+            levelFloor.clearCheck();
         } else if(levelTwo.getCheckedRadioButtonId() == v.getId()) {
             levelOne.clearCheck();
             levelThree.clearCheck();
+            levelFloor.clearCheck();
         } else if(levelThree.getCheckedRadioButtonId() == v.getId()) {
             levelOne.clearCheck();
             levelTwo.clearCheck();
+            levelFloor.clearCheck();
+        }else if(levelFloor.getCheckedRadioButtonId() == v.getId()) {
+            levelOne.clearCheck();
+            levelTwo.clearCheck();
+            levelThree.clearCheck();
         }
     }
 }
