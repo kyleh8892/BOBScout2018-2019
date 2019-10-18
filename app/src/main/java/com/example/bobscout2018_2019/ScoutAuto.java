@@ -57,10 +57,10 @@ public class ScoutAuto extends AppCompatActivity {
 
         try{
             RadioButton startLevel = autoStartLevel.findViewById(autoStartLevel.getCheckedRadioButtonId());
-            extras.putString("AUTO_START_LEVEL", startLevel.getText().toString().substring(startLevel.toString().length()));
+            extras.putString("AUTO_START_LEVEL", startLevel.getText().toString());
 
             RadioButton startPosition = autoStartPosotion.findViewById(autoStartPosotion.getCheckedRadioButtonId());
-            extras.putString("AUTO_START_POSITION", startPosition.getText().toString().substring(startPosition.toString().length()));
+            extras.putString("AUTO_START_POSITION", startPosition.getText().toString());
         }catch (NullPointerException e){
             extras.putString("AUTO_START_LEVEL", "null");
             extras.putString("AUTO_START_POSITION", "null");

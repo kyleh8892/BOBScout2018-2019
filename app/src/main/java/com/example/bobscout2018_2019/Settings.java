@@ -1,6 +1,9 @@
 package com.example.bobscout2018_2019;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 
 public class Settings extends AppCompatActivity{
@@ -113,6 +117,32 @@ public class Settings extends AppCompatActivity{
 
         Intent intent = new Intent(this, Start.class);
         startActivity(intent);
+    }
+
+    public void reset (View v){
+
+        sharedPref = this.getSharedPreferences("BOBScout2018-2019_prefs", Context.MODE_PRIVATE);
+        editor = sharedPref.edit();
+
+        AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+        alertDialog.setTitle("Are your sure?");
+        alertDialog.setMessage("Do you want to reset the match number to 1?");
+
+        alertDialog.setButton(Dialog.BUTTON_POSITIVE, "Yes", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                editor.putInt("match", 1);
+                editor.apply();
+
+                Toast.makeText(getApplicationContext(), "Saved!", Toast.LENGTH_LONG).show();
+            }
+        });
+
+        alertDialog.setButton(Dialog.BUTTON_NEGATIVE, "No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+        alertDialog.show();
     }
 
 }

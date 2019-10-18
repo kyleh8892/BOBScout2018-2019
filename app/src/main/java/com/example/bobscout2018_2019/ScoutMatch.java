@@ -209,6 +209,14 @@ public class ScoutMatch extends Activity {
         int totalHatches = 0;
         int totalCargo = 0;
 
+        int totalCargoHeight1 = 0;
+        int totalCargoHeight2 = 0;
+        int totalCargoHeight3 = 0;
+
+        int totalHatchHeight1 = 0;
+        int totalHatchHeight2 = 0;
+        int totalHatchHeight3 = 0;
+
         for (ToggleButton b : hatchButtons) {
             data += match + "," + team + ",";
             data += getID(b.toString()) + ",";
@@ -217,36 +225,67 @@ public class ScoutMatch extends Activity {
             if(b.isChecked()) {
                 totalHatches++;
             }
+
+            String button = getID(b.toString());
+            if (button.length() < 6 && b.isChecked()){
+                totalHatchHeight1++;
+            }else if (button.length() > 6 && b.isChecked()) {
+                if (button.contains("T")) {
+                    totalHatchHeight3++;
+                } else if (button.contains("M")) {
+                    totalHatchHeight2++;
+                } else if (button.contains("B")) {
+                    totalHatchHeight1++;
+                }
+            }
         }
 
         for (ToggleButton b : cargoButtons) {
             data += match + "," + team + ",";
-            data += getID(b.toString()) + ",";
+            data += getID(b.toString()) + ","; // use this to find the id of the button
             data += b.isChecked() + "," ;
             data += "\n";
             if(b.isChecked()) {
                 totalCargo++;
             }
+
+            String button = getID(b.toString());
+            if (button.length() < 6 && b.isChecked()){
+                totalCargoHeight1++;
+            }else if (button.length() > 6 && b.isChecked()) {
+                if (button.contains("T")) {
+                    totalCargoHeight3++;
+                } else if (button.contains("M")) {
+                    totalCargoHeight2++;
+                } else if (button.contains("B")) {
+                    totalCargoHeight1++;
+                }
+            }
         }
 
-        data += totalHatches + ",";
-        data += "\n";
+        data += "Total: hatches cargo" + "," + totalHatches + "," + totalCargo + ",\n";
 
-        data += totalCargo + ",";
-        data += "\n";
+        data += "Total dropped: hatches cargo" + "," + hatchDroppedNumber + "," + cargoDroppedNumber + ",\n";
+
+        data += "Hatch height scores: one two three" + "," + totalHatchHeight1 + "," + totalHatchHeight2 + "," + totalHatchHeight3 + ",\n";
+
+        data += "Cargo height scores: one two three" + "," + totalCargoHeight1 + "," + totalCargoHeight2 + "," + totalCargoHeight3 + ",\n";
+
+
+
     }
 
     public void increaseHatchDropped(View v){
         hatchDroppedNumber++;
     }
     public void decreaseHatchDropped(View v){
-        hatchDroppedNumber--;
+        if(hatchDroppedNumber > 0 ){hatchDroppedNumber--;}
     }
     public void increaseCargoDropped(View v){
         cargoDroppedNumber++;
     }
     public void decreaseCargoDropped(View v){
-        cargoDroppedNumber--;
+        if (cargoDroppedNumber > 0 ){cargoDroppedNumber--;}
     }
 
     public String getID (String fullID){

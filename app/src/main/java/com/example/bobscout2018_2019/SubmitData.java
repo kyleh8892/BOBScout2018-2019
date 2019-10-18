@@ -74,9 +74,7 @@ public class SubmitData extends AppCompatActivity {
         String auto = autoStartLevel + "," + autoStartPosition + "," + boolToInt(autoCross) + "," + boolToInt(placeCargoCS) + "," + boolToInt(placeCargoRS) + "," + boolToInt(placeHatchCS) + "," + boolToInt(placeHatchRS) + "," + boolToInt(pickCargo) + "," + boolToInt(pickHatch) + ",";
 
         // Teleop
-        hatchDropped = extras.getInt("HATCHESDROPPED");
-        cargoDropped = extras.getInt("CARGODROPPED");
-        String teleop = extras.getString("DATA") + hatchDropped + ",\n" + cargoDropped + ",\n";
+        String teleop = extras.getString("DATA");
 
         // End
         discard = extras.getBoolean("DISCARD");
@@ -95,7 +93,7 @@ public class SubmitData extends AppCompatActivity {
 
 
         if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-            File dir = new File(Environment.getExternalStorageDirectory(), "/BOBScout2018-2019/Matches/");
+            File dir = new File(Environment.getExternalStorageDirectory(), "/BOBScout2018-2019/TestMatches/");
             dir.mkdirs();
             File file = new File(dir, matchNum + "_" + teamNum + ".csv");
 
